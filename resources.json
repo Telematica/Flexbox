@@ -1,0 +1,12 @@
+{
+	"resources" : [
+		{
+			"title" : "Flexbox Frog",
+			"url" : "http://flexboxfroggy.com/"
+		},
+		{
+			"title" : "justify-content - CSS | MDN",
+			"url" : "https://developer.mozilla.org/es/docs/Web/CSS/justify-content"
+		}
+	]
+}
