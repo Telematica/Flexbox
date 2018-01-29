@@ -1,0 +1,50 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "uglify": "^0.1.5",
+    "uglifycss": "0.0.27",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "images": "cp -r assets/images dist/.",
+    "fonts": "cp -r assets/fonts dist/.",
+    "uglify": "uglifyjs dist/js/app.js -o dist/js/app.min.js --compress=sequences,properties,dead_code,conditionals,comparisons,booleans,loops,unused,if_return,join_vars,warnings,cascade,collapse_vars,drop_console --mangle",
+    "uglifycss": "uglifycss dist/css/main.css > dist/css/main.min.css",
+    "minify": "minify --output dist/ dist/css/main.css",
+    "dev": "npm run images && webpack --progress --colors --watch",
+    "build": "npm run images && webpack && npm run uglify && npm run uglifycss"
+  },
+  "name": "flexbox",
+  "description": "Self-taught CSS Flexbox",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "postcss-cli": "^4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Telematica/Flexbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Telematica/Flexbox/issues"
+  },
+  "homepage": "https://github.com/Telematica/Flexbox#readme"
+}

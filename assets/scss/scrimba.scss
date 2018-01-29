@@ -1,0 +1,29 @@
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  border: 5px solid #FFCC5C;
+
+  > div {
+    padding: 10px;
+    font-size: 2em;
+    color: #ffeead;
+    text-align: center;
+
+    &:nth-child(1) {
+      background-color: #96ceb4;
+    }
+
+    &:nth-child(2) {
+      background-color: #ff6f69;
+    }
+
+    &:nth-child(3) {
+      background-color: #88d8b0;
+    }
+  }
+}
+
