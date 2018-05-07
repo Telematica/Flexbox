@@ -1,10 +1,53 @@
+.a, .b {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  padding: 0;
+  //z-index: 103;
+  font-size: 5rem;
+  height: 100px;
+  width: 100%;
+}
+
+.a {
+  color: blue;
+  //z-index: 100;
+}
+
+.b {
+  color: yellow;
+  //z-index: 100;
+}
+
+.c, .d {
+  position: absolute;
+  width: 100%;
+  clip: rect(auto, auto, auto, auto);
+}
+
+.c {
+  height: 5000px;
+  background-color: orange;
+}
+
+.d {
+  height: 1000px;
+  //z-index: 101;
+  background-color: pink;
+}
+
+
+
+/*
 #main {
 	.container {
 		background-color: #F44336;
 		box-shadow: 0 2px 5px rgba(0,0,0,.26);
 		height: 20em;
 
-		/** flex settings **/
+		// flex settings
 		align-items: stretch;
 		display: flex;
 		flex-direction: column-reverse;
@@ -40,3 +83,4 @@
 		}
 	}
 }
+*/
